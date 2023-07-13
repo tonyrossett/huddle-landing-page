@@ -1,0 +1,101 @@
+body {
+    background: url('../images/bg-desktop.svg');
+    background-color: var(--background);
+    grid-template-areas: "header"
+                         "main"
+                         "social";
+    font-family: 'Poppins', sans-serif;
+    padding: 30px 70px;
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+    margin-bottom: 115px;   
+}
+
+.header .logo {
+    display: flex;
+    width: 250px;
+    height: 60px;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    gap: 60px;
+}
+
+main .picture {
+    content: url(../images/illustration-mockups.svg);
+    width: 100%;    
+}
+
+main .info {
+    display: grid;
+    max-width: 650px;    
+}
+
+main .info h1 {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 45px;
+    margin-bottom: -75px;
+}
+
+main .info p {
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: -50px;    
+}
+
+
+main .info .button {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 56px;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--background);
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+}
+
+main .info .button:hover {
+    background-color: var(--btn-hover);
+    color: #ffffff;
+}
+
+.social {
+    grid-area: social;
+    align-self: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 25px;         
+}
+
+.social i {
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    font-size: 35px;
+    margin: 10px;
+    border: 1px solid;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.social i:hover {
+    color: var(--btn-hover);
+}
+

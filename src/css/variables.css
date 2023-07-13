@@ -1,0 +1,5 @@
+:root {
+    --max-width-size: 1920px;
+    --background: hsl(257, 40%, 49%);
+    --btn-hover: hsl(300, 69%, 71%);
+}
